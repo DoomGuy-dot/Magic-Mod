@@ -5,7 +5,7 @@
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Changelog/Releases](#changelog)
-* [Content/Features](#content/features)
+* [Content/Features](#content/Features)
 * [Project Status](#project-status)
 * [Contact](#contact)
 
