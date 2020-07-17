@@ -1,0 +1,78 @@
+
+Magic Mod is mod based around... well... Magic!
+
+It will add a bunch of new magic weapons, accessories, and consumables, and tinker with the basic magic mechanics in the game.
+
+
+
+------Weapons------
+
+
+Fairy Wand: Early game magic weapon that shoots fallen star projectiles.
+1x Wood, 1x Fallen Star
+
+Lesser Healing Staff - Will restore a small amount of the user's health when used.
+1x Wood, 1x Mana Core (Read more about this in accessories)
+
+Greater Healing Staff - Will restore a large amount of the user's health when used.
+1x Lesser Healing Staff, 15x Pixie Dust
+
+Zephyr's Blade - My first modded weapon, a Terrablade that deals Magic Damage.
+1x Terrablade, 5x Mana Crystal
+
+
+
+
+------Accessories------
+
+
+Mana Core - Restores Health when spending Mana. 2 Defense
+2x Life Crystal, 2x Mana Crystal, 10x Stone
+
+Shiny Gem - Grants the player additional Mana and 10% reduced Mana usage. Also makes the player glow.
+1x Large Diamond, 3x Fallen Star, 3x Shine Potion
+
+Ceremonial Dagger - Uses Health to cast spells when the player runs out of Mana.
+6x Hellstone Bar, 1x Mana Core
+
+Essence Dropper - Grants the player additional Mana regen when hitting an enemy with a magic attack.
+1x Empty Dropper, 5x Soul of Light, 3x Mana Crystal
+
+Soul Dropper - Grants the player additional Health regen when hitting an enemy with a magic attack.
+1x Empty Dropper, 5x Soul of Night, 3x Mana Crystal
+
+Reaper's Vial - Grants the player additional Health and Mana regen when hitting an enemy with a magic attack.
+1x Essence Dropper, 1x Soul Dropper, 4x Ectoplasm
+
+
+---Sigils--- (These powerful accessories will allow you to play as a Mage in a multitude of ways, but you may only have one equipped at a time.)
+
+Power Sigil - Grants the player greatly increased Magic Damage and Magic Critical Strike Chance, at the cost of a massive Melee, Ranged, and Minion Damage reduction.
+1x Avenger Emblem, 10x Mana Crystal
+
+Mana Sigil - Grants the player insanely high Mana regen, at the cost of a medium Magic Damage reduction.
+1x Avenger Emblem, 10x Mana Crystal
+
+Blood Sigil - Increased Magic Damage and Magic Critical Strike Chance, at the cost of casting spells with Health instead of Mana (at a reduced casting cost).
+1x Avenger Emblem, 10x Mana Crystal
+
+Control Sigil - Greatly reduced Mana Costs for casting spells, at the cost of a very high Mana Regen delay.
+1x Avenger Emblem, 10x Mana Crystal
+
+Chaos Sigil - Work in progess! Currently in the game, but will do nothing upon being equipped.
+1x Avenger Emblem, 10x Mana Crystal
+
+
+
+------Base Game Changes------
+
+2 New Recipes For:
+Mana Crystal
+1x Life Crystal, 1x Fallen Star
+and
+1x Life Crystal, 3x Mana Potion
+
+
+
+
+New enemies, NPC's, items, and more will hopefully be coming soon!

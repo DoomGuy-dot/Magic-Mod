@@ -1,0 +1,3 @@
+displayName = Magic Mod
+author = Zephyr
+version = 0.1
