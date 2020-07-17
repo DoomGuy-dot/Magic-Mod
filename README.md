@@ -22,6 +22,7 @@ Hey you! Mod developer! Hurry up and add this!
 
 ## Changelog
 version 0.1.3
+[Latest Releases](https://github.com/Zephyr-dot/Magic-Mod/releases)
 
 
 ## Mod Content
