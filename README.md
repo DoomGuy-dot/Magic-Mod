@@ -24,7 +24,7 @@ Hey you! Mod developer! Hurry up and add this!
 version 0.1.3
 
 
-## Content/Features
+## Mod Content
 * Feature
 * Feature
 * Feature
@@ -33,7 +33,7 @@ To-do list:
 * To-do
 * To-do
 
-## Project status
+## Project Status
 Project is: DEFINITELY in progress. This means there will be the occasional bug or balance issue, but it also means there will be LOTS of new content coming shortly!
 
 ## Contact
