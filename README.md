@@ -2,11 +2,11 @@
 > Magic Mod, a mod for Terraria using tModLoader.
 
 ## Table of contents
-* [General info](#general-info)
+* [General Info](#general-Info)
 * [Screenshots](#screenshots)
 * [Changelog/Releases](#changelog)
-* [Content/Features](#content/Features)
-* [Project Status](#project-status)
+* [Mod Content](#mod-Content)
+* [Project Status](#project-Status)
 * [Contact](#contact)
 
 ## General info
