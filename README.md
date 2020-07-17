@@ -5,6 +5,7 @@
 * [General Info](#general-Info)
 * [Screenshots](#screenshots)
 * [Changelog/Releases](#changelog)
+* [Mod Wiki](https://github.com/Zephyr-dot/Magic-Mod/wiki)
 * [Mod Content](#mod-Content)
 * [Project Status](#project-Status)
 * [Contact](#contact)
