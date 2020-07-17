@@ -18,6 +18,7 @@ namespace MagicMod.Items.Weapons
 			item.width = 24;
 			item.height = 24;
 
+			item.noMelee = true;
 			item.magic = true;
 
 			item.damage = 8;

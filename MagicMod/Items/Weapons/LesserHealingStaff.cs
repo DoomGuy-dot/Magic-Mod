@@ -11,7 +11,7 @@ namespace MagicMod.Items.Weapons
 		public override void SetStaticDefaults() 
 		{
 			DisplayName.SetDefault("Lesser Healing Staff"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("Restores 5 health (Affected by magic damage bonuses)");
+			Tooltip.SetDefault("Restores 8 health (Affected by magic damage bonuses)");
 		}
 
 		public override void SetDefaults() 
@@ -22,7 +22,9 @@ namespace MagicMod.Items.Weapons
 			item.noMelee = true;
 			item.magic = true;
 
-			item.mana = 20;
+			item.material = true;
+
+			item.mana = 24;
 
 			item.useTime = 30;
 			item.useAnimation = 30;
@@ -37,7 +39,7 @@ namespace MagicMod.Items.Weapons
 
         public override void OnConsumeMana(Player player, int manaConsumed)
         {
-			int healAmount = (int)(10 * player.magicDamage);
+			int healAmount = (int)(8 * player.magicDamage);
 			player.statLife += healAmount;
 			player.HealEffect(healAmount, true);
 

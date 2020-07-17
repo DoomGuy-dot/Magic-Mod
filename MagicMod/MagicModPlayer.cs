@@ -14,6 +14,12 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using Terraria.Utilities;
 using static Terraria.ModLoader.ModContent;
+using Microsoft.Xna.Framework.Input;
+using Terraria.GameContent;
+using Terraria.GameContent.Achievements;
+using Terraria.GameContent.Events;
+using Terraria.Graphics.Capture;
+using Terraria.Graphics.Shaders;
 
 namespace MagicMod
 {
@@ -26,6 +32,7 @@ namespace MagicMod
         public bool soulDropper; //dealing damage boosts health regen
 
         public bool reapersVial; //dealing damage greatly boosts health and mana regen
+        public int manaCounter;
 
         public bool ceremonialKnife; //spends health instead of mana
 
@@ -33,6 +40,8 @@ namespace MagicMod
         public int bloodCost;
 
         public bool chaosSigil; //randomly modifies spell damage and cost by 50%
+
+        public bool controlSigil; //no mana regen for 30 seconds
 
         //public bool soulRobe; 
 
@@ -92,6 +101,39 @@ namespace MagicMod
             }
         }
 
+        public override void UpdateLifeRegen()
+        {
+            if (player.HasBuff(BuffType<Buffs.ManaSiphon>()))
+            {
+                int num = 6;
+                manaCounter++; // 10 mana regen/s
+                if (manaCounter >= num)
+                {
+                    manaCounter -= num;
+                    player.statMana++;
+                    if (player.statMana >= player.statManaMax2)
+                    {
+                        player.statMana = player.statManaMax2;
+                    }
+                }
+            }
+            
+            if (player.HasBuff(BuffType<Buffs.SoulSiphon>()))
+            {
+                int num = 6;
+                manaCounter += 3; // 30 mana regen/s
+                if (manaCounter >= num)
+                {
+                    manaCounter -= num;
+                    player.statMana++;
+                    if (player.statMana >= player.statManaMax2)
+                    {
+                        player.statMana = player.statManaMax2;
+                    }
+                }
+            }
+        }
+
         public override void OnConsumeMana(Item item, int manaConsumed)
         {
             if (manaCore && !player.manaSick)
@@ -114,6 +156,11 @@ namespace MagicMod
                     player.statLife -= bloodCost;
                     player.lifeRegenTime -= 20;
                 }
+            }
+
+            if (controlSigil)
+            {
+                player.AddBuff(BuffType<Buffs.ManaLock>(), 30 * 60 + 10);
             }
         }
 

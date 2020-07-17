@@ -8,20 +8,19 @@ using Terraria.ModLoader;
 
 namespace MagicMod.Buffs
 {
-    class ManaSiphon : ModBuff
+    class ManaLock : ModBuff
     {
 		public override void SetDefaults()
 		{
-			DisplayName.SetDefault("Mana Siphon");
-			Description.SetDefault("Extracting essence... Increased mana regen!");
+			DisplayName.SetDefault("Mana Lock");
+			Description.SetDefault("You are in control... Restoring mana in:");
 
-			Main.debuff[Type] = false; //prevents nurse heal
+			Main.debuff[Type] = true; //prevents nurse heal
 		}
 
 		public override void Update(Player player, ref int buffIndex)
 		{
-			player.manaRegenBonus += 20; //bonus mana regen while active
-			player.manaRegenDelayBonus += 1; //removes mana regen delay
+			player.manaRegenDelay = 20; //removes mana regen delay
 		}
 	}
 }

@@ -21,8 +21,7 @@ namespace MagicMod.Buffs
 		public override void Update(Player player, ref int buffIndex)
 		{
 			player.lifeRegen += 10; //bonus health regen while active
-			player.manaRegenBonus += 40; //bonus mana regen while active
-			player.manaRegenDelayBonus += 10; //removes mana regen delay
+			player.manaRegenDelayBonus += 3; //removes mana regen delay
 		}
 	}
 }
