@@ -5,7 +5,8 @@
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Changelog/Releases](#changelog)
-* [Content/Features](#features)
+* [Content/Features](#content/features)
+* [Project Status](#project-status)
 * [Contact](#contact)
 
 ## General info
@@ -32,8 +33,8 @@ To-do list:
 * To-do
 * To-do
 
-## Status
+## Project status
 Project is: DEFINITELY in progress. This means there will be the occasional bug or balance issue, but it also means there will be LOTS of new content coming shortly!
 
 ## Contact
-Discord: @Zephyr-Dot#6200 - feel free to contact me about bugs/suggestions/etc.! You can find me on the [tModLoader](https://www.tmodloader.net/) Discord server, just @ping me or find me and send a private message!
+Discord: @Zephyr-Dot#6200 - feel free to contact me about bugs/suggestions/questions/etc.! You can find me on the [tModLoader](https://www.tmodloader.net/) Discord server, just @ping me or find me and send a private message!
