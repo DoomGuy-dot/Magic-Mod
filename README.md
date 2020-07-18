@@ -8,6 +8,7 @@
 * [Mod Wiki](https://github.com/Zephyr-dot/Magic-Mod/wiki)
 * [Mod Content](#mod-Content)
 * [Project Status](#project-Status)
+* [Download Counter!](#download-counter)
 * [Contact](#contact)
 
 ## General info
@@ -19,7 +20,7 @@ Currently (As of July 17, 2020), the mod is only 2 days into development.
 I have not made a mod before this one, for any game, but I am learning how to use tModLoader to make this mod as awesome as possible! Just stick with me and eventually at some point you maybe just might possibly get some new boss fights or something. ;)
 
 ## Screenshots
-![Fallen Star Zombie Screenshot](MagicMod/img/screenshot.png)
+![Fallen Star Zombie Screenshot](./MagicMod/img/screenshot.png)
 
 ## Changelog
 version 0.1.3
@@ -37,6 +38,9 @@ To-do list:
 
 ## Project Status
 Project is: DEFINITELY in progress. This means there will be the occasional bug or balance issue, but it also means there will be LOTS of new content coming shortly!
+
+## Download Counter
+Magic Mod has had over 350 downloads since release!
 
 ## Contact
 Discord: @Zephyr-Dot#6200 - feel free to contact me about bugs/suggestions/questions/etc.! You can find me on the [tModLoader](https://www.tmodloader.net/) Discord server, just @ping me or find me and send a private message!
