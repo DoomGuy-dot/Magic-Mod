@@ -22,6 +22,7 @@ I have not made a mod before this one, for any game, but I am learning how to us
 ## Screenshots
 ![Fallen Star Zombie Screenshot](./MagicMod/img/FallenStarZombieSS.png)
 ![CoolItems](./MagicMod/img/CoolItems.png)
+![CoolAccessories](./MagicMod/img/CoolAccessories.png)
 
 ## Changelog
 version 0.1.3
