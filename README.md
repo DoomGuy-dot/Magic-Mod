@@ -25,7 +25,7 @@ I have not made a mod before this one, for any game, but I am learning how to us
 ![CoolAccessories](./MagicMod/img/CoolAccessories.png)
 
 ## Changelog
-version 0.1.3
+version 0.1.5
 [Latest Releases](https://github.com/Zephyr-dot/Magic-Mod/releases)
 
 
