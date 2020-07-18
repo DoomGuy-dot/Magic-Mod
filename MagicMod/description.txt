@@ -1,7 +1,10 @@
 
 Magic Mod is mod based around... well... Magic!
 
-It will add a bunch of new magic weapons, accessories, and consumables, and tinker with the basic magic mechanics in the game.
+It will add a bunch of new magic weapons, accessories, and consumables, and tinker with some of the basic magic mechanics in the game.
+Currently added: 4 new weapons, 12 new accessories, 8 new accessory modifiers, 5 new buffs/debuffs, 3(4) new recipies for vanilla items, and 1 new enemy.
+
+NOTICE: TO SEE THE CHANGELOG, LASTEST UPDATES, AND MORE INFORMATION, CLICK ON THE HOMEPAGE/GITHUB LINK AND VIEW THE README FILE! Thank you :)
 
 
 
@@ -29,7 +32,7 @@ Zephyr's Blade - My first modded weapon, a Terrablade that deals Magic Damage.
 Mana Core - Restores Health when spending Mana. 2 Defense
 2x Life Crystal, 2x Mana Crystal, 10x Stone
 
-Shiny Gem - Grants the player additional Mana and 10% reduced Mana usage. Also makes the player glow.
+Shiny Gem - Grants the player additional Mana and some reduced Mana usage. Also makes the player glow.
 1x Large Diamond, 3x Fallen Star, 3x Shine Potion
 
 Ceremonial Dagger - Uses Health to cast spells when the player runs out of Mana.
@@ -47,10 +50,13 @@ Reaper's Vial - Grants the player additional Health and Mana regen when hitting 
 
 ---Sigils--- (These powerful accessories will allow you to play as a Mage in a multitude of ways, but you may only have one equipped at a time.)
 
-Power Sigil - Grants the player greatly increased Magic Damage and Magic Critical Strike Chance, at the cost of a massive Melee, Ranged, and Minion Damage reduction.
+Power Sigil - Grants the player greatly increased Magic Damage and Magic Critical Strike Chance, at the cost of increased Mana Usage;
 1x Avenger Emblem, 10x Mana Crystal
 
-Mana Sigil - Grants the player insanely high Mana regen, at the cost of a medium Magic Damage reduction.
+Focus Sigil - Grants the player moderately increased Magic Damage and Magic Critical Strike Chance, at the cost of a massive Melee, Ranged, and Minion Damage reduction.
+1x Avenger Emblem, 10x Mana Crystal
+
+Mana Sigil - Grants the player insanely high Mana regen and lots of Maximum Mana, at the cost of a medium Magic Damage reduction.
 1x Avenger Emblem, 10x Mana Crystal
 
 Blood Sigil - Increased Magic Damage and Magic Critical Strike Chance, at the cost of casting spells with Health instead of Mana (at a reduced casting cost).
@@ -63,16 +69,41 @@ Chaos Sigil - Work in progess! Currently in the game, but will do nothing upon b
 1x Avenger Emblem, 10x Mana Crystal
 
 
+---Prefixes/Modifiers for Accessories---
+Twinkling - +5 mana regen
+Shimmering - +10 mana regen
+Sparkling - +15 mana regen
+Glistening - +20 mana regen
 
-------Base Game Changes------
+Curious - 2% reduced mana usage
+Imbued - 4% reduced mana usage
+Enchanted - 6% reduced mana usage
+Ancient - 8% reduced mana usage
 
-2 New Recipes For:
-Mana Crystal
+
+
+
+------Recipes------
+
+2 New Recipes For: Mana Crystal
 1x Life Crystal, 1x Fallen Star
 and
 1x Life Crystal, 3x Mana Potion
 
+1 New Recipe for: Life Crystal
+1x Mana Crystal, 3x Healing Potion
+
+1 New "Recipe" for: Fallen Star
+Bought from Merchant
 
 
 
-New enemies, NPC's, items, and more will hopefully be coming soon!
+
+------Enemies------
+Fallen Star Zombie
+Drops: 3x Fallen Stars
+Spawns at night
+Note: Very dangerous up close!!!
+
+
+New enemies, NPC's, items, and more will be coming soon!

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -10,7 +11,7 @@ namespace MagicMod.Items.Accessories.Sigils
 		public override void SetStaticDefaults()
 		{
 			// DisplayName.SetDefault("BasicSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("Devote yourself to the way of Power\n25% increased magic damage and critical strike chance\n90% decreased melee, ranged, and minion damage");
+			Tooltip.SetDefault("Devote yourself to the way of Power\n30% increased magic damage and critical strike chance\n20% increased mana cost\nMana costs are doubled if the player has the Mana Sickness debuff");
 		}
 
 		public override void SetDefaults()
@@ -21,18 +22,22 @@ namespace MagicMod.Items.Accessories.Sigils
 			item.accessory = true;
 
 			item.value = Item.sellPrice(0, 0, 10, 0);
-			item.rare = ItemRarityID.Expert;
+			item.expert = true;
 		}
 
-        public override void UpdateAccessory(Player player, bool hideVisual)
-        {
-			player.meleeDamage *= 0.1f;
-			player.rangedDamage *= 0.1f;
-			player.minionDamage *= 0.1f;
+		public override void ModifyTooltips(List<TooltipLine> tooltips)
+		{
+			tooltips.RemoveAll(l => l.Name.EndsWith("Expert"));
+		}
 
-			player.magicDamage += 0.25f;
-			player.magicCrit += 25;
-        }
+		public override void UpdateAccessory(Player player, bool hideVisual)
+        {
+			player.magicDamage += 0.30f;
+			player.magicCrit += 30;
+			player.manaCost += 0.20f;
+
+			player.GetModPlayer<MagicModPlayer>().powerSigil = true;
+		}
 
         public override void AddRecipes()
 		{

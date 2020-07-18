@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -21,10 +22,15 @@ namespace MagicMod.Items.Accessories
 			item.accessory = true;
 
 			item.value = Item.sellPrice(0, 1, 0, 0);
-			item.rare = ItemRarityID.Expert;
+			item.expert = true;
 		}
 
-        public override void UpdateAccessory(Player player, bool hideVisual)
+		public override void ModifyTooltips(List<TooltipLine> tooltips)
+		{
+			tooltips.RemoveAll(l => l.Name.EndsWith("Expert"));
+		}
+
+		public override void UpdateAccessory(Player player, bool hideVisual)
         {
 			player.statManaMax2 += 60;
 

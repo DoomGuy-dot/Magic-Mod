@@ -39,11 +39,18 @@ namespace MagicMod.Items.Weapons
 
         public override void OnConsumeMana(Player player, int manaConsumed)
         {
-			int healAmount = (int)(8 * player.magicDamage);
-			player.statLife += healAmount;
-			player.HealEffect(healAmount, true);
+			float healAmount = (int)(8 * (player.magicDamage + player.allDamage - 1));
+			if (player.manaSick)
+			{
+				healAmount /= 2;
+			}
+			if (player.GetModPlayer<MagicModPlayer>().HealSickCheck())
+			{
+				healAmount *= 0.7f;
+			}
 
-			//player.AddBuff (too much health, decreased effectiveness)
+			player.statLife += (int)healAmount;
+			player.HealEffect((int)healAmount, true);
 		}
 
 		public override void AddRecipes() 

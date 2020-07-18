@@ -23,6 +23,7 @@ namespace MagicMod.Items.Weapons
 
 			item.damage = 100;
 			item.knockBack = 12;
+			item.crit = 10;
 
 			item.useTime = 30;
 			item.useAnimation = 30;

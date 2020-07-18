@@ -8,19 +8,14 @@ using Terraria.ModLoader;
 
 namespace MagicMod.Buffs
 {
-    class ManaLock : ModBuff
+    class HealingSickness : ModBuff
     {
 		public override void SetDefaults()
 		{
-			DisplayName.SetDefault("Mana Lock");
-			Description.SetDefault("You are in control... Restoring mana in:");
+			DisplayName.SetDefault("Healing Sickness");
+			Description.SetDefault("30% Decreased healing spell effectiveness!");
 
 			Main.debuff[Type] = true;
-		}
-
-		public override void Update(Player player, ref int buffIndex)
-		{
-			player.manaRegenDelay = 20; //removes mana regen delay
 		}
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Steamworks;
+using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -24,7 +25,12 @@ namespace MagicMod.Items.Accessories
 			item.accessory = true;
 
 			item.value = Item.sellPrice(0, 5, 0, 0);
-			item.rare = ItemRarityID.Expert;
+			item.expert = true;
+		}
+
+		public override void ModifyTooltips(List<TooltipLine> tooltips)
+		{
+			tooltips.RemoveAll(l => l.Name.EndsWith("Expert"));
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
@@ -32,11 +38,11 @@ namespace MagicMod.Items.Accessories
 			player.GetModPlayer<MagicModPlayer>().reapersVial = true;
 		}
 
-		public override int ChoosePrefix(UnifiedRandom rand)
-		{
-			// When the item is given a prefix, only roll the best modifiers for accessories
-			return rand.Next(new int[] { PrefixID.Arcane, PrefixID.Lucky, PrefixID.Menacing, PrefixID.Quick, PrefixID.Violent, PrefixID.Warding });
-		}
+		//public override int ChoosePrefix(UnifiedRandom rand)
+		//{
+		//	// When the item is given a prefix, only roll the best modifiers for accessories
+		//	return rand.Next(new int[] { PrefixID.Arcane, PrefixID.Lucky, PrefixID.Menacing, PrefixID.Quick, PrefixID.Violent, PrefixID.Warding });
+		//}
 
 		public override void AddRecipes()
 		{

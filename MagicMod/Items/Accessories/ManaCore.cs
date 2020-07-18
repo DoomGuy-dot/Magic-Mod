@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using System.Collections.Generic;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Utilities;
@@ -11,7 +12,7 @@ namespace MagicMod.Items.Accessories
 		public override void SetStaticDefaults()
 		{
 
-			Tooltip.SetDefault("Every 10 mana spent will restore 1 health.");
+			Tooltip.SetDefault("Every 10 mana spent will restore 1 health\nThe Core's power will only show when infused with pure mana. Casting spells with Mana from a bottle will be ineffective...");
 
 		}
 
@@ -26,18 +27,17 @@ namespace MagicMod.Items.Accessories
 			item.defense = 2;
 
 			item.value = Item.sellPrice(0, 1, 0, 0);
-			item.rare = ItemRarityID.Expert;
+			item.expert = true;
+		}
+
+		public override void ModifyTooltips(List<TooltipLine> tooltips)
+		{
+			tooltips.RemoveAll(l => l.Name.EndsWith("Expert"));
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
 			player.GetModPlayer<MagicModPlayer>().manaCore = true;
-		}
-
-		public override int ChoosePrefix(UnifiedRandom rand)
-		{
-			// When the item is given a prefix, only roll the best modifiers for accessories
-			return rand.Next(new int[] { PrefixID.Arcane, PrefixID.Lucky, PrefixID.Menacing, PrefixID.Quick, PrefixID.Violent, PrefixID.Warding });
 		}
 
 		public override void AddRecipes()

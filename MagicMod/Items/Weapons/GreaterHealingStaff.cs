@@ -1,7 +1,10 @@
 using Microsoft.Xna.Framework;
+using Steamworks;
+using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using MagicMod;
 
 namespace MagicMod.Items.Weapons
 {
@@ -10,7 +13,7 @@ namespace MagicMod.Items.Weapons
 		public override void SetStaticDefaults() 
 		{
 			DisplayName.SetDefault("Greater Healing Staff"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("Restores 40 health (Affected by magic damage bonuses)");
+			Tooltip.SetDefault("Restores 40 health (This is the base amount, and is affected by damage bonuses)\nHealing amount is decreased by 50% if the player has the Mana Sickness debuff");
 		}
 
 		public override void SetDefaults() 
@@ -34,13 +37,20 @@ namespace MagicMod.Items.Weapons
 			item.rare = ItemRarityID.Expert;
 		}
 
-        public override void OnConsumeMana(Player player, int manaConsumed)
+		public override void OnConsumeMana(Player player, int manaConsumed)
         {
-			int healAmount = (int)(40 * player.magicDamage);
-			player.statLife += healAmount;
-			player.HealEffect(healAmount, true);
+			float healAmount = (int)(40 * (player.magicDamage + player.allDamage - 1));
+			if (player.manaSick)
+            {
+				healAmount /= 2;
+            }
+			if (player.GetModPlayer<MagicModPlayer>().HealSickCheck())
+            {
+                healAmount *= 0.7f;
+            }
 
-			//player.AddBuff (too much health, decreased effectiveness)
+			player.statLife += (int)healAmount;
+            player.HealEffect((int)healAmount, true);
 		}
 
 		public override void AddRecipes() 

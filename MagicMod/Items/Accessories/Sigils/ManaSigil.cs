@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -10,7 +11,7 @@ namespace MagicMod.Items.Accessories.Sigils
 		public override void SetStaticDefaults()
 		{
 			// DisplayName.SetDefault("BasicSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("Devote yourself to the way of Mana\n25% reduced mana usage\n200 increased maximum mana\nGreatly increased mana regen\n20% decreased magic damage");
+			Tooltip.SetDefault("Devote yourself to the way of Mana\nGreatly increased mana regen\n200 increased maximum mana\n10% decreased magic damage");
 		}
 
 		public override void SetDefaults()
@@ -21,15 +22,19 @@ namespace MagicMod.Items.Accessories.Sigils
 			item.accessory = true;
 
 			item.value = Item.sellPrice(0, 0, 10, 0);
-			item.rare = ItemRarityID.Expert;
+			item.expert = true;
 		}
 
-        public override void UpdateAccessory(Player player, bool hideVisual)
-        {
-			player.magicDamage -= 0.20f;
-			player.manaCost -= 0.25f;
+		public override void ModifyTooltips(List<TooltipLine> tooltips)
+		{
+			tooltips.RemoveAll(l => l.Name.EndsWith("Expert"));
+		}
 
-			player.manaRegenBonus += 300;
+		public override void UpdateAccessory(Player player, bool hideVisual)
+        {
+			player.magicDamage -= 0.10f;
+
+			player.manaRegenBonus += 400;
 
 			player.statManaMax2 += 200;
         }

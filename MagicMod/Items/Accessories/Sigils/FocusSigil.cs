@@ -6,12 +6,12 @@ using Terraria.ModLoader;
 
 namespace MagicMod.Items.Accessories.Sigils
 {
-    class ChaosSigil : Sigils
+    class FocusSigil : Sigils
 	{
 		public override void SetStaticDefaults()
 		{
 			// DisplayName.SetDefault("BasicSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("Devote yourself to the way of Chaos\nWORK IN PROGRESS! DOES NOTHING!");
+			Tooltip.SetDefault("Devote yourself to the way of Focus\n15% increased magic damage and critical strike chance\n15% reduced mana usage\n90% decreased melee, ranged, and minion damage");
 		}
 
 		public override void SetDefaults()
@@ -32,8 +32,14 @@ namespace MagicMod.Items.Accessories.Sigils
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
         {
-			player.GetModPlayer<MagicModPlayer>().chaosSigil = true;
-		}
+			player.meleeDamage *= 0.1f;
+			player.rangedDamage *= 0.1f;
+			player.minionDamage *= 0.1f;
+
+			player.magicDamage += 0.15f;
+			player.magicCrit += 15;
+			player.manaCost -= 0.15f;
+        }
 
         public override void AddRecipes()
 		{

@@ -20,6 +20,7 @@ using Terraria.GameContent.Achievements;
 using Terraria.GameContent.Events;
 using Terraria.Graphics.Capture;
 using Terraria.Graphics.Shaders;
+using MagicMod.Items.Accessories.Sigils;
 
 namespace MagicMod
 {
@@ -40,10 +41,10 @@ namespace MagicMod
         public int bloodCost;
 
         public bool chaosSigil; //randomly modifies spell damage and cost by 50%
-
         public bool controlSigil; //no mana regen for 30 seconds
+        public bool powerSigil; //higher mana cost -> higher damage
 
-        //public bool soulRobe; 
+        //public bool soulRobe; hey you! don't look at this one yet!
 
 
 		public override void ResetEffects()
@@ -60,6 +61,8 @@ namespace MagicMod
             bloodCost = 0;
 
             chaosSigil = false;
+            controlSigil = false;
+            powerSigil = false;
         }
 
         public override void OnHitNPCWithProj(Projectile proj, NPC target, int damage, float knockback, bool crit)
@@ -162,6 +165,11 @@ namespace MagicMod
             {
                 player.AddBuff(BuffType<Buffs.ManaLock>(), 30 * 60 + 10);
             }
+
+            if (powerSigil && player.manaSick)
+            {
+                player.statMana -= (int)(manaConsumed * 0.5f);
+            }
         }
 
         public override void OnMissingMana(Item item, int neededMana)
@@ -173,6 +181,20 @@ namespace MagicMod
                     player.statMana += neededMana;
                     player.statLife -= neededMana;
                 }
+            }
+        }
+
+        public bool HealSickCheck()
+        {
+            if (player.HasBuff(BuffType<HealingSickness>()))
+            {
+                player.AddBuff(BuffType<HealingSickness>(), 190);
+                return true;
+            }
+            else
+            {
+                player.AddBuff(BuffType<HealingSickness>(), 190);
+                return false;
             }
         }
     }
