@@ -19,7 +19,7 @@ Currently (As of July 17, 2020), the mod is only 2 days into development.
 I have not made a mod before this one, for any game, but I am learning how to use tModLoader to make this mod as awesome as possible! Just stick with me and eventually at some point you maybe just might possibly get some new boss fights or something. ;)
 
 ## Screenshots
-Hey you! Mod developer! Hurry up and add this!
+![Fallen Star Zombie Screenshot](MagicMod/img/screenshot.png)
 
 ## Changelog
 version 0.1.3
