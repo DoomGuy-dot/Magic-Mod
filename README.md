@@ -45,7 +45,8 @@ version 0.1.5
 Project is: DEFINITELY in progress. This means there will be the occasional bug or balance issue, but it also means there will be LOTS of new content coming shortly!
 
 ## Download Counter
-Magic Mod has had over 350 downloads since release!
+Magic Mod has had over 500 downloads since release!
+Spread the word about Magic Mod!
 
 ## Contact
 Discord: @Zephyr-Dot#6200 - feel free to contact me about bugs/suggestions/questions/etc.! You can find me on the [tModLoader](https://www.tmodloader.net/) Discord server, just @ping me or find me and send a private message!
