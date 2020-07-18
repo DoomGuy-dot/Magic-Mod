@@ -17,7 +17,7 @@ The Mod is designed to enhance Terraria's already advanced Magic system by givin
 Magic-Mod is not meant to give players super overpowered items to trivialize the game, it is simply supposed to enhance the Terraria experience with more options and ways to play. (At some point, Boss fights post Moon-Lord could be added, in which case new, more powerful items would need to be available to the player.)
 
 Currently (As of July 17, 2020), the mod is only 2 days into development.
-I have not made a mod before this one, for any game, but I am learning how to use tModLoader to make this mod as awesome as possible! Just stick with me and eventually at some point you maybe just might possibly get some new boss fights or something. ;)
+I have not made a mod before this one, for any game, but I am learning how to use tModLoader to make this mod as awesome as possible! Just stick with me and eventually at some point you maybe just might possibly get some new boss fights or something cool like that. ;)
 
 ## Screenshots
 ![Fallen Star Zombie Screenshot](./MagicMod/img/FallenStarZombieSS.png)
@@ -30,13 +30,16 @@ version 0.1.5
 
 
 ## Mod Content
-* Feature
-* Feature
-* Feature
+* New Weapon Type
+* New Accessory Combos
+* New Mana Systems
+* New Enemies
+* New Items
+* New Recipes
+* New Buffs and Debuffs
+* Much, much more
+* Ane even MUCH more in the future!
 
-To-do list:
-* To-do
-* To-do
 
 ## Project Status
 Project is: DEFINITELY in progress. This means there will be the occasional bug or balance issue, but it also means there will be LOTS of new content coming shortly!
