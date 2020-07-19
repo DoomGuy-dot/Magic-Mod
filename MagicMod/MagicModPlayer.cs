@@ -21,6 +21,7 @@ using Terraria.GameContent.Events;
 using Terraria.Graphics.Capture;
 using Terraria.Graphics.Shaders;
 using MagicMod.Items.Accessories.Sigils;
+using MagicMod.Items.Weapons;
 
 namespace MagicMod
 {
@@ -139,6 +140,12 @@ namespace MagicMod
 
         public override void OnConsumeMana(Item item, int manaConsumed)
         {
+
+            //if (item = ItemType<IcicleStaff>())
+            //{
+            //    ?
+            //}
+
             if (manaCore && !player.manaSick)
             {
                 manaCoreCounter += manaConsumed;

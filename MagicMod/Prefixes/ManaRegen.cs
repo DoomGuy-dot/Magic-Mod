@@ -47,9 +47,7 @@ namespace MagicMod.Prefixes
 		}
 
 		public override void Apply(Item item)
-		{
-			item.GetGlobalItem<PrefixItem>().manaRegen = manaRegen;
-		}
+			=> item.GetGlobalItem<PrefixItem>().manaRegen = manaRegen;
 
 		public override void ModifyValue(ref float valueMult)
 		{

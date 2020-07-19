@@ -1,5 +1,5 @@
-displayName = Magic Mod
+displayName = Magic Mod (FIXED)
 author = Zephyr
-version = 0.1.5
+version = 0.1.8
 
 homepage = https://github.com/Zephyr-dot/Magic-Mod/tree/master

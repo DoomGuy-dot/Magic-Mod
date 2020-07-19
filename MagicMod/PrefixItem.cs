@@ -33,8 +33,8 @@ namespace MagicMod
         {
             if (!item.social && item.prefix > 0)
             {
-                int bonus = manaReduction - Main.cpItem.GetGlobalItem<PrefixItem>().manaReduction;
-
+                //int bonus = manaReduction - Main.cpItem.GetGlobalItem<PrefixItem>().manaReduction;
+                int bonus = manaReduction;
                 if (bonus > 0)
                 {
                     TooltipLine line = new TooltipLine(mod, "ManaPrefix", "+" + bonus + "% Reduced Mana Usage");
@@ -45,8 +45,8 @@ namespace MagicMod
 
             if (!item.social && item.prefix > 0)
             {
-                int bonus = manaRegen - Main.cpItem.GetGlobalItem<PrefixItem>().manaRegen;
-
+                //int bonus = manaRegen - Main.cpItem.GetGlobalItem<PrefixItem>().manaRegen;
+                int bonus = manaRegen;
                 if (bonus > 0)
                 {
                     TooltipLine line = new TooltipLine(mod, "ManaPrefix", "+" + bonus / 2 + " Mana Regen");
@@ -69,7 +69,6 @@ namespace MagicMod
             if (item.GetGlobalItem<PrefixItem>().manaReduction > 0)
             {
                 player.manaCost -= manaReduction / 100f;
-                //player.statManaMax2 -= manaReduction; //"mana reduction variable equals 8: Confirmed"
             }
             
             if (item.GetGlobalItem<PrefixItem>().manaRegen > 0)
@@ -87,8 +86,8 @@ namespace MagicMod
 
         public override void NetReceive(Item item, BinaryReader reader)
         {
-            manaReduction = reader.ReadByte();
-            manaRegen = reader.ReadByte();
+            manaReduction = reader.ReadInt32();
+            manaRegen = reader.ReadInt32();
         }
     }
 }
