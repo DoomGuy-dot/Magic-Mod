@@ -42,10 +42,10 @@ version 0.1.5
 
 
 ## Project Status
-Project is: DEFINITELY in progress. This means there will be the occasional bug or balance issue, but it also means there will be LOTS of new content coming shortly!
+Project is: Semi-in development. I will probably be updating the mod from time to time, but there will no longer be guaranteed daily updates. I will let you all know when i return to rapid development :)
 
 ## Download Counter
-Magic Mod has had over 1,000 downloads since release!
+Magic Mod has had over 2,500 downloads since release!
 Spread the word about Magic Mod to make the number go up and get more new content!
 
 (But seriously...) Thank all of you for your support, every download and suggestion I get means a lot to me, and inspires me to continue to bring awesome content your way.
