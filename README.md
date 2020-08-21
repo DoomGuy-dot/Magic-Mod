@@ -42,7 +42,7 @@ version 0.1.5
 
 
 ## Project Status
-Project is: Semi-in development. I will probably be updating the mod from time to time, but there will no longer be guaranteed daily updates. I will let you all know when i return to rapid development :)
+Project is: Not currently in development. (On pause)
 
 ## Download Counter
 Magic Mod has had over 2,500 downloads since release!
